@@ -1,0 +1,164 @@
+.key{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 7px;
+    .clear{
+        grid-column: span 2;
+        background: #f00;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        width: 100%;
+        &::before{
+            background: linear-gradient(90deg, #d20000, #ffffff5c);
+            opacity: .5;
+            border-left: 1px solid #fff4;
+            border-bottom: 1px solid #fff4;
+            border-top: 1px solid #fff4;
+        }
+    }
+    span{
+        position: relative;
+        display: grid;
+        place-items: center;
+        width: 32px;
+        height: 27px;
+        background: linear-gradient(90deg, #585757,#3f3f3f);
+        box-shadow: 2px 3px 10px rgba(#000, .4);
+        user-select: none;
+        cursor: pointer;
+        border-radius: 5px;
+        color: #fff;
+        font-size: .8em;
+
+        &::before{
+            content: '';
+            position: absolute;
+            border-radius: 5px;
+            background: rgba(#585757, .3);
+            box-shadow: -5px -5px 15px rgba(0, 0, 0, .1),
+            10px 5px 10px rgba(0, 0, 0, .15);
+            top: 2px;
+            left: 2px;
+            bottom: 4px;
+            right: 4px;
+            border-left: 1px solid rgba(#0004, .1);
+            border-top: 1px solid rgba(#0009, .1);
+        }
+        &:active{
+            filter: brightness(1.5);
+        }
+}
+ .equal{
+  grid-row: span 2;
+  height: 100%;
+  background: #2196f3;
+  &::before{
+    background:linear-gradient(90deg, #1479c9, #ffffff5c);
+    opacity: .4;
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
+}
+.cero{
+    grid-column: span 2;
+    width: 100%;
+}
+}
+.light{
+
+    .calculator{
+        
+        span 
+        {
+            background: linear-gradient(180deg, #fafafa,#f4f4f4);
+            box-shadow: inset -8px 0 8px rgba(0, 0, 0, .15),
+            inset 0 -8px 8px rgba(0, 0, 0, .15),
+            0 0 0 2px rgba(0, 0, 0, .1),
+            10px 20px 25px rgba(0, 0, 0, .25);
+            color: #000;
+            &::before{
+                background: linear-gradient(90deg, #e6e6e6, #efefef);
+                opacity: .5;
+                border-radius: 5px;
+                box-shadow: -5px -5px 15px rgba(255, 255, 255, .25),
+                10px 5px 10px rgba(0, 0, 0, .15);
+                border-left: 1px solid #fff4;
+                border-bottom: 1px solid #fff4;
+                border-top: 1px solid #fff9;
+            }
+            &:active{
+                filter: brightness(0.9);
+            }
+        }
+    }
+    .key{
+        .clear{
+            background: #f00;
+            color: #fff;
+            &::before{
+                background: linear-gradient(90deg, #d20000, #ffffff5c);
+                opacity: .5;
+                border-left: 1px solid #fff4;
+                border-bottom: 1px solid #fff4;
+                border-top: 1px solid #fff4;
+            }
+        } 
+        .equal{
+                color: #fff;
+                background: #2196f3;
+
+                &::before{
+                    background:linear-gradient(90deg, #1479c9, #ffffff5c);
+                    opacity: .4;
+                    border-left: 1px solid #fff4;
+                    border-bottom: 1px solid #fff4;
+                    border-top: 1px solid #fff4;
+                }
+            }
+
+        }
+        .btn{
+            background: #fafafa;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, .1),
+            5px 5px 30px rgba(0, 0, 0, .05),
+            inset -2px -2px 5px rgba(0, 0, 0, .1),
+            inset 2px 2px 5px rgba(0, 0, 0, .05);
+        }
+        .btn strong:nth-child(1){
+            display: none;
+        
+        }
+        .btn {
+            strong:nth-child(2){
+            display: block;
+            }
+        }
+} 
+
+.btn{
+    position: absolute;
+    top:  20px;
+    right: 29px;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    font-size: 1em;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .25),
+    5px 5px 30px rgba(0, 0, 0, .25),
+    inset -2px -2px 5px rgba(0, 0, 0, .25),
+    inset 2px 2px 5px rgba(0, 0, 0, .25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn strong{
+    display: none;
+
+}
+.btn strong:nth-child(1){
+    display: block;
+}
